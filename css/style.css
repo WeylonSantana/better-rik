@@ -1,0 +1,95 @@
+/* Navegação */
+nav {
+  background-color: #584edd;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav .container,
+section .container {
+  max-width: 1050px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul.menu li a:hover {
+  color: #00ffeb;
+}
+
+nav ul.socials li a i {
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+nav ul.socials li a i:hover {
+  transition: 0.3s ease-in-out;
+  color: #00ffeb;
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 100px;
+}
+
+/* Hero */
+section.hero {
+  background-color: #6b58e1;
+  background-image: url('../img/hero-bg.png');
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+section div.hero-content {
+  margin-top: 6rem;
+}
+
+section div.hero-content p {
+  color: #00ffeb;
+  font-size: 1.25rem;
+  letter-spacing: 2.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section div.hero-content p:first-child::before {
+  content: ' ';
+  width: 65px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(0, 255, 235, 0) 0%, rgba(0, 255, 235, 1) 100%);
+  display: inline-block;
+  margin-right: 25px;
+}
+
+section div.hero-content h1 {
+  color: white;
+  font-size: 6.875rem;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  width: 12ch;
+  margin: 2rem 0;
+}
